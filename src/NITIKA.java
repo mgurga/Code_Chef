@@ -28,6 +28,7 @@ public class NITIKA
     	for(int g = 0; g < numOfWords; g++) {
     		changes = words[g];
     		changes = changes.substring(0, 1).toUpperCase() + changes.substring(1);
+    		
     		words[g] = changes;
     		System.out.println(changes);
     	}
