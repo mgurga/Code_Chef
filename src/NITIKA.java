@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class NITIKA
+class NITIKA
 {
   public static void main(String[] args)
   {
