@@ -1,25 +1,20 @@
 import java.util.Scanner;
 
-class LUCKFOUR
+class FLOW004
 {
   public static void main(String[] args)
   {
     Scanner scan = new Scanner(System.in);
     int testcases = scan.nextInt();
     String input = "";
-    int fours = 0;
+    int first = 0;
+    int last = 0;
     for (int i = 0; i < testcases; i++)
     {
       input = scan.next();
-      fours = 0;
-      for (int h = 0; h < input.length(); h++)
-      {
-        if (input.charAt(h) == '4')
-        {
-          fours++;
-        }
-      }
-      System.out.println(fours);
+      first = Character.getNumericValue(input.charAt(0));
+      last = Character.getNumericValue(input.charAt(input.length() - 1));
+      System.out.println(first + last);
     }
   }
 }
