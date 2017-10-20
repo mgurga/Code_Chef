@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class FLOW014
+class FLOW014
 {
   public static void main(String[] args)
   {
@@ -28,7 +28,6 @@ public class FLOW014
       }
       input = scan.nextLine();
       specs = input.split(" ");
-      System.out.println(input);
       if (Integer.parseInt(specs[0]) > 50)
       {
         hardnessMet = true;
@@ -41,9 +40,6 @@ public class FLOW014
       {
         tensileMet = true;
       }
-      System.out.println(hardnessMet);
-      System.out.println(carbonMet);
-      System.out.println(tensileMet);
       if (hardnessMet == true && carbonMet == true && tensileMet == true)
       {
         grade = 10;
