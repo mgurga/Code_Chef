@@ -9,11 +9,17 @@ class INTEST
     String firstin = scan.nextLine();
     firstsplit = firstin.split(" ");
     int testcases = Integer.parseInt(firstsplit[0]);
-    System.out.println(testcases);
+    int divisibleBy = Integer.parseInt(firstsplit[1]);
     String input = "";
+    int numDivisible = 0;
     for (int i = 0; i < testcases; i++)
     {
       input = scan.next();
+      if (Integer.parseInt(input) % divisibleBy == 0)
+      {
+        numDivisible++;
+      }
     }
+    System.out.println(numDivisible);
   }
 }
