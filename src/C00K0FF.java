@@ -23,6 +23,7 @@ public class C00K0FF
       String[] chalLevel = new String[Integer.parseInt(input)];
       for (int g = 0; g < hasBlank.length; g++)
       {
+        chalLevel[g] = "";
         hasBlank[g] = false;
       }
       for (int j = 0; j < Integer.parseInt(input); j++)
