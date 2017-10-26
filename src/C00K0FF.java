@@ -1,6 +1,9 @@
 import java.util.Scanner;
 
-public class C00K0FF
+//Works in console
+//but does not work
+//on codechef
+class C00K0FF
 {
   public static void main(String[] args)
   {
@@ -9,22 +12,20 @@ public class C00K0FF
     String input = "";
     String input2 = "";
     int points = 0;
+    int[] outputs = new int[testcases];
     boolean[] hasBlank = new boolean[7];
-    //hasBlank[0] = cakewalk
-    //hasBlank[1] = simple
-    //hasBlank[2] = easy
-    //hasBlank[3] = easy-medium
-    //hasBlank[4] = medium
-    //hasBlank[5] = medium-hard
-    //hasBlank[6] = hard
     for (int i = 0; i < testcases; i++)
     {
       input = scan.next();
       String[] chalLevel = new String[Integer.parseInt(input)];
+      points = 0;
       for (int g = 0; g < hasBlank.length; g++)
       {
-        chalLevel[g] = "";
         hasBlank[g] = false;
+      }
+      for (int g = 0; g < chalLevel.length; g++)
+      {
+        chalLevel[g] = "";
       }
       for (int j = 0; j < Integer.parseInt(input); j++)
       {
@@ -80,17 +81,24 @@ public class C00K0FF
       }
       if (points >= 5)
       {
+        outputs[i] = 1;
+      }
+      else
+      {
+        outputs[i] = 0;
+      }
+    }
+    scan.close();
+    for (int h = 0; h < outputs.length; h++)
+    {
+      if (outputs[h] == 1)
+      {
         System.out.println("Yes");
       }
       else
       {
         System.out.println("No");
       }
-      //      for (int g = 0; g < chalLevel.length; g++)
-      //      {
-      //        System.out.println(chalLevel[g]);
-      //      }
     }
-    scan.close();
   }
 }
