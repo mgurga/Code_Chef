@@ -10,7 +10,11 @@ public class LONGSEQ
     for (int i = 0; i < testcases; i++)
     {
       input = scan.next();
-      for()
+      int[] numbers = new int[input.length()];
+      for (int g = 0; g < input.length(); g++)
+      {
+        numbers[g] = input.charAt(g);
+      }
     }
   }
 }
