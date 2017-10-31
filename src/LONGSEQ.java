@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class LONGSEQ
+class LONGSEQ
 {
   public static void main(String[] args)
   {
@@ -8,6 +8,7 @@ public class LONGSEQ
     int testcases = scan.nextInt();
     String input = "";
     boolean yeaOrNay = false;
+    boolean[] outputs = new boolean[testcases];
     for (int i = 0; i < testcases; i++)
     {
       input = scan.next();
@@ -43,7 +44,11 @@ public class LONGSEQ
         }
         numbersToChange = numbers;
       }
-      if (yeaOrNay == true)
+      outputs[i] = yeaOrNay;
+    }
+    for (int i = 0; i < testcases; i++)
+    {
+      if (outputs[i] == true)
       {
         System.out.println("Yes");
       }
