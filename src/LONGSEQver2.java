@@ -8,7 +8,6 @@ class LONGSEQver2
     int testcases = scan.nextInt();
     String input = "";
     boolean yeaOrNay = false;
-    boolean[] outputs = new boolean[testcases];
     for (int i = 0; i < testcases; i++)
     {
       input = scan.next();
