@@ -27,13 +27,18 @@ public class BUGCAL
           input = "0" + input;
         }
       }
-      System.out.println(input + "," + input2);
+      while (input.length() < 3)
+      {
+        input = "0" + input;
+        input2 = "0" + input2;
+      }
       hundreds = input.charAt(0) - '0';
       hundreds = hundreds + input2.charAt(0) - '0';
       tens = input.charAt(1) - '0';
       tens = tens + input2.charAt(1) - '0';
       ones = input.charAt(2) - '0';
       ones = ones + input2.charAt(2) - '0';
+      System.out.println(hundreds + " " + tens + " " + ones);
     }
   }
 }
