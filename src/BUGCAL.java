@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class BUGCAL
+class BUGCAL
 {
   public static void main(String[] args)
   {
@@ -38,7 +38,31 @@ public class BUGCAL
       tens = tens + input2.charAt(1) - '0';
       ones = input.charAt(2) - '0';
       ones = ones + input2.charAt(2) - '0';
-      System.out.println(hundreds + " " + tens + " " + ones);
+      if (ones > 9)
+      {
+        ones = ones - 10;
+      }
+      if (tens > 9)
+      {
+        tens = tens - 10;
+      }
+      if (hundreds > 9)
+      {
+        hundreds = hundreds - 10;
+      }
+      if (hundreds == 0 && tens == 0)
+      {
+        System.out.println(ones);
+      }
+      else if (hundreds == 0)
+      {
+        System.out.println(tens + "" + ones);
+      }
+      else
+      {
+        System.out.println(hundreds + "" + tens + "" + ones);
+      }
     }
+    scan.close();
   }
 }
