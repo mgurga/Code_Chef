@@ -1,5 +1,6 @@
 import java.util.Scanner;
 
+// does not work
 public class RAINBOWA
 {
   public static void main(String[] args)
