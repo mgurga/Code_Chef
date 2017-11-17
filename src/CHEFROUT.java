@@ -1,25 +1,24 @@
 import java.util.Scanner;
 
-class CHEFROUT
+public class CHEFROUT
 {
   public static void main(String[] args)
   {
-    boolean hasEaten = false;
-    boolean hasSlept = false;
-    boolean hasCooked = false;
+    boolean badRout = false;
     Scanner scan = new Scanner(System.in);
     int testcases = scan.nextInt();
     String input = "";
     for (int i = 0; i < testcases; i++)
     {
       input = scan.next();
-      if (input.charAt(0) == 'C')
+      for (int j = 0; j < input.length() - 1; j++)
       {
-        System.out.println("yes");
-      }
-      else
-      {
-        System.out.println("no");
+        if (input.charAt(j) == 'S')
+        {
+          System.out.println("no");
+          badRout = true;
+        }
+        if(input.charAt(j) == 'C')
       }
     }
   }
