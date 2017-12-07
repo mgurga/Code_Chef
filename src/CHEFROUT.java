@@ -18,7 +18,9 @@ public class CHEFROUT
           System.out.println("no");
           badRout = true;
         }
-        if(input.charAt(j) == 'C')
+        if (input.charAt(j) == 'C')
+        {
+        }
       }
     }
   }
