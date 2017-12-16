@@ -7,7 +7,6 @@ class NITIKA
     Scanner scan = new Scanner(System.in);
     int testcases = 0;
     int numOfWords = 0;
-    char holder = ' ';
     testcases = scan.nextInt();
     scan.nextLine();
     String rawInput = "";
